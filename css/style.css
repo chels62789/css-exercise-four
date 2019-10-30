@@ -1,4 +1,70 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 10px
+
 }
+
+.container
+{widdth:100%;
+margin: 0px auto;}
+
+
+
+h1 {
+  font-family: Helvetica;
+  text-align:center;
+  text-transform: uppercase;
+  padding-top: 1em;
+  padding-bottom:2em;
+}
+
+h3 {
+  position: absolute;
+  padding: 5%;
+  font-size: 1.4em;
+  font-weight: 300;
+  display: block;
+}
+
+img {
+  object-fit: cover;
+  width:100%;
+  display: block;
+
+}
+
+@media screen and (min-width: 575px) /*IPAD*/{
+  img {
+    width: 50%
+    float:left}
+  img {
+      width: 50%
+      float:left}
+    }
+  }
+
+
+  @media screen and (min-width: 900px) /*desktop*/{
+    img {
+      width: 25%
+      }
+    img {
+        width: 25%
+      }
+    img {
+        width: 25%
+            }
+
+    img {
+        width: 25%
+              }
+    body
+    {font size: 200%}
+
+      }
+    }
