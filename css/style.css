@@ -38,7 +38,7 @@ h3 {
   .baku {
     background-image: url("/images/baku.jpg");
     width: 100%;
-    height: 300px;
+    height: 280px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -48,7 +48,7 @@ h3 {
   .london {
     background-image: url("/images/london.png");
     width: 100%;
-    height: 300px;
+    height: 280px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -57,7 +57,7 @@ h3 {
   .madrid {
     background-image: url("/images/madrid.jpg");
     width: 100%;
-    height: 300px;
+    height: 280px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -66,7 +66,7 @@ h3 {
   .rome{
     background-image: url("/images/rome.jpg");
     width: 100%;
-    height: 300px;
+    height: 280px;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -75,22 +75,20 @@ h3 {
 
 @media screen and (min-width: 420px)/*IPAD*/ {
 
-    .container{
-      max-width: 80%;
+
+
+  .preview {
+    margin: 1%;
+      width: 48%;
+      background-size: contain;
 
     }
-
-    .preview {
-        width: 48%;
-        margin: 1%;
-
-      }
 
       h3
       {
         display: inline-block;
         float:left;
-        width: 50%;
+        width: 48%;
         font-size: 2em;
       }
       h1 {
@@ -101,24 +99,26 @@ h3 {
 
   }
 
+
+
+/*not working on desktop view right now only ipad and iphone*/
   @media screen and (min-width: 991px) /*desktop*/
 {
-  .container{
-    max-width: 50%;}
 
   .preview {
-      width: 20%;
-      display: inline-block;
-      padding 5%;
+    margin: 1%;
+      width: 21%;
+      background-size: contain;
 
     }
 }
-    h3
-    {
-      display: inline-block;
-      float:left;
-      font-size: 2em;
-    }
+h3
+{
+  display: inline-block;
+  float:left;
+  width: 48%;
+  font-size: 2em;
+}
     h1 {
       font-size: 2em
       text-align: center;
