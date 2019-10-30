@@ -82,7 +82,6 @@ h3 {
 
     .preview {
         width: 48%;
-        display: inline-block;
         margin: 1%;
 
       }
@@ -102,16 +101,13 @@ h3 {
 
   }
 
-
-
-/*not working on desktop view right now only ipad and iphone*/
   @media screen and (min-width: 991px) /*desktop*/
 {
   .container{
     max-width: 50%;}
 
   .preview {
-      width: 25%;
+      width: 20%;
       display: inline-block;
       padding 5%;
 
@@ -121,7 +117,6 @@ h3 {
     {
       display: inline-block;
       float:left;
-      width: 50%;
       font-size: 2em;
     }
     h1 {
