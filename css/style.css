@@ -11,11 +11,9 @@ body {
 
 .container {
 width:100%;
-margin: auto;
+margin: 5%;
 display: inline-block
 }
-
-
 
 
 h1 {
@@ -34,21 +32,45 @@ h3 {
   display: inline-block;
 }
 
-img {
-
+.preview {
   box-sizing: border-box;
-  width: 375px;
+  width: 100%;
   display: inline-block;
+  margin: 1%;
 
 }
 
 @media screen and (min-width: 575px) /*IPAD*/
 {
+.container
+{width: 100%;}
 
-    img {
+    .preview {
         width: 50%;
         display: inline-block;
       }
+      .Baku
+      {
+          width: 50%;
+          display: inline-block;
+        }
+      .London
+      {   float: right;
+          width: 50%;
+          display: inline-block;
+        }
+      .Madrid
+      {
+          float: right;
+          width: 50%;
+          display: inline-block;
+        }
+      .Rome
+      {
+          width: 50%;
+          display: inline-block;
+        }
+
       h3
       {
         display: inline-block;
@@ -56,10 +78,15 @@ img {
         width: 50%;
         font-size: 2em;
       }
+      h1 {
+        font-size: 2em}
+      }
 
   }
 
 
+
+/*not working on desktop view right now only ipad and iphone*/
   @media screen and (min-width: 991px) /*desktop*/
   {
     .Preview {
