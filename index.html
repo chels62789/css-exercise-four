@@ -1,26 +1,127 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>css exercise four</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <section class="container">
-      <h1>Modern luxury <span class="emphasis">travel</span></h1>
-      <div class="preview baku">
-        <h1>Baku</h1>
-      </div>
-      <div class="preview london">
-        <h1>London</h1>
-      </div>
-      <div class="preview madrid">
-        <h1>Madrid</h1>
-      </div>
-      <div class="preview rome">
-        <h1>Rome</h1>
-      </div>
-    </section>
-  </body>
-</html>
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #dadada;
+  font-size: 75%;
+}
+
+.container {
+width:100%;
+display: inline-block
+}
+
+
+h1 {
+  font-family: Helvetica;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 1.2em;
+  padding-bottom:2em;
+}
+
+h3 {
+  position: absolute;
+  padding: 3%;
+  font-size: 1.5em;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.preview {
+    width: 100%;
+    display: inline-block;
+    }
+
+  .baku {
+    background-image: url("/images/baku.jpg");
+    width: 100%;
+    height: 280px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    }
+
+  .london {
+    background-image: url("/images/london.png");
+    width: 100%;
+    height: 280px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+  .madrid {
+    background-image: url("/images/madrid.jpg");
+    width: 100%;
+    height: 280px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+  .rome{
+    background-image: url("/images/rome.jpg");
+    width: 100%;
+    height: 280px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+
+@media screen and (min-width: 420px)/*IPAD*/ {
+
+
+
+  .preview {
+    margin: 1%;
+      width: 48%;
+      background-size: contain;
+
+    }
+
+      h3
+      {
+        display: inline-block;
+        float:left;
+        width: 48%;
+        font-size: 2em;
+      }
+      h1 {
+        font-size: 2em
+        text-align: center;
+    }
+
+
+  }
+
+
+
+/*not working on desktop view right now only ipad and iphone*/
+  @media screen and (min-width: 991px) /*desktop*/
+{
+
+  .preview {
+    margin: 1%;
+      width: 21%;
+      background-size: contain;
+
+    }
+}
+h3
+{
+  display: inline-block;
+  float:left;
+  width: 48%;
+  font-size: 2em;
+}
+    h1 {
+      font-size: 2em
+      text-align: center;
+  }
+
+}
