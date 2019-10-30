@@ -11,7 +11,8 @@ body {
 
 .container
 {widdth:100%;
-margin: 0px auto;}
+margin: 0px auto;
+display: inline-block}
 
 
 
@@ -32,39 +33,23 @@ h3 {
 }
 
 img {
-  object-fit: cover;
+  box-sizing: border-box;
   width:100%;
   display: block;
 
 }
 
-@media screen and (min-width: 575px) /*IPAD*/{
-  img {
-    width: 50%
-    float:left}
-  img {
-      width: 50%
-      float:left}
-    }
-  }
+@media screen and (min-width: 575px) /*IPAD*/
+{
+  .Preview {
+      width: 50%;
+      float:left;}
 
 
-  @media screen and (min-width: 900px) /*desktop*/{
-    img {
-      width: 25%
-      }
-    img {
-        width: 25%
-      }
-    img {
-        width: 25%
-            }
+  @media screen and (min-width: 900px) /*desktop*/
+  {
+    .Preview {
+        width: 25%;
+        float:left;}
 
-    img {
-        width: 25%
-              }
-    body
-    {font size: 200%}
-
-      }
     }
