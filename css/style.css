@@ -5,20 +5,22 @@
 
 body {
   background-color: #dadada;
-  font-size: 10px
+  font-size: 10px;
 
 }
 
-.container
-{widdth:100%;
+.container {
+width:100%;
 margin: 0px auto;
-display: inline-block}
+display: inline-block
+}
+
 
 
 
 h1 {
   font-family: Helvetica;
-  text-align:center;
+  text-align: center;
   text-transform: uppercase;
   padding-top: 1em;
   padding-bottom:2em;
@@ -27,29 +29,42 @@ h1 {
 h3 {
   position: absolute;
   padding: 5%;
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-weight: 300;
   display: block;
 }
 
 img {
   box-sizing: border-box;
-  width:100%;
+  width: 375px;
   display: block;
 
 }
 
 @media screen and (min-width: 575px) /*IPAD*/
 {
-  .Preview {
-      width: 50%;
-      float:left;}
+
+    img {
+        width: 50%;
+        display: inline-block;
+      }
+      h3
+      {
+        display: inline-block;
+        float:left;
+        width: 50%;
+        font-size: 2em;
+      }
+
+  }
 
 
-  @media screen and (min-width: 900px) /*desktop*/
+  @media screen and (min-width: 991px) /*desktop*/
   {
     .Preview {
         width: 25%;
-        float:left;}
+        float: left;
+        display: inline-block;
+      }
 
     }
