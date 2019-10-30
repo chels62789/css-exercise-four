@@ -42,60 +42,42 @@ img {
     width: 100%;
     display: inline-block;
   }
-  .Baku
-  {
-      width: 100%;
-      display: inline-block;
+  .Baku {
+    background-image: url("images/baku.jpg");
+    width: 100%;
+    display: inline-block;
     }
   .London
-  {   float: right;
+
+  { background-image: url("images/london.png");
+    float: right;
       width: 100%;
       display: inline-block;
     }
   .Madrid
-  {
+  {background-image: url("images/madrid.jpg");
       float: right;
       width: 100%;
       display: inline-block;
     }
   .Rome
   {
+    background-image: url("images/rome.jpg");
       width: 100%;
       display: inline-block;
     }
 
 
-@media screen and (min-width: 575px) /*IPAD*/
+@media screen and (min-width: 420px) /*IPAD*/
 {
     .container{
-      width: 80%;}
+      max-width: 80%;}
 
     .preview {
-        width: 50%;
+        max-width: 50%;
         display: inline-block;
-      }
-      .Baku
-      {
-          width: 50%;
-          display: inline-block;
-        }
-      .London
-      {   float: right;
-          width: 50%;
-          display: inline-block;
-        }
-      .Madrid
-      {
-          float: right;
-          width: 50%;
-          display: inline-block;
-        }
-      .Rome
-      {
-          width: 50%;
-          display: inline-block;
-        }
-
+}
+}
       h3
       {
         display: inline-block;
